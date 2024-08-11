@@ -74,7 +74,7 @@ export default function Home() {
 
   return (
     <Box width="100vw" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <a href="https://github.com/cluelessdesi/Customer-Support"> <Button variant="contained">Github code</Button> </a>
+      <a href="https://github.com/cluelessdesi/Customer-Support"> <Button variant="contained">GITHUB CODE</Button> </a>
       <Button variant="text"></Button>
       <Stack direction="column" width="900px" height="700px" border="1px solid black" p={2} spacing={3}>
         <Stack direction="column" spacing={2} flexGrow={1} overflow="auto" maxHeight="100%">
