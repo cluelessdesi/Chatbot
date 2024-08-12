@@ -34,6 +34,7 @@ export default function Home() {
     let temp_msg = "I'm sorry I can not respond to that prompt as I am designed to converse about issues that are bothering you";
     if (counter < 1) {
       alert(temp_msg)
+      setMessage('')
       return null
     }
 
