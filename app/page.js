@@ -24,20 +24,6 @@ export default function Home() {
   const sendMessage = async () => {
     // if (input.trim() === '') return;
 
-    let counter = 0;
-    for (let i = 0; i < emotions.length; ++i) {
-      if (message.includes(emotions[i])) {
-        counter += 1
-      }
-    }
-
-    let temp_msg = "I'm sorry I can not respond to that prompt as I am designed to converse about issues that are bothering you";
-    if (counter < 1) {
-      alert(temp_msg)
-      setMessage('')
-      return null
-    }
-
     const userMessage = { role: 'user', content: message };
     setMessages(prev => [...prev, userMessage]);
     // setInput('');
