@@ -67,7 +67,8 @@ export default function Home() {
     } finally {
       // setIsLoading(false);
     }
-    setMessage('')
+    setMessage('');
+    await new Promise(r => setTimeout(r, 10000));
   };
 
   const useEnterKeyToSend = (event) => {
@@ -81,6 +82,11 @@ export default function Home() {
     <Box width="100vw" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center"
       sx={{backgroundImage: 'url(/sky.gif)', backgroundSize: 'cover', backgroundPosition: 'center',}}>
       <Typography variant='h7' color='#000' textAlign={'center'} fontWeight={'bold'}>
+        <Typography variant='h6' color='rgb(255, 0, 21)' textAlign={'center'} fontWeight={'bold'}>
+          Hi guys, when I built this project, I was uninformed on the ethical concerns of using a chatbot 
+          as a place to vent. Go talk to people, your friends, your family please. This project only remains
+          up to show people that I build personal projects lol.
+        </Typography>
         This is an experimental chatbot with limited capabilities. The chatbot is not designed to prescribe medication
         for mental health issues or to mimic the role of a therapist, but simply, offer a conversational space to talk 
         about whats bothering you. If you face any issues with the chatbot, please <a href="mailto:sufiyanretreat@gmail.com">reach out</a>.
